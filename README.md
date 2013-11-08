@@ -12,13 +12,13 @@ freeDOM
 - Making both of these options available during each request, to meet the requirements of SEO, mulitple platforms, and RAD development are met simultaneously.
   
 ###Technologies at present:
-- *Node.js* (javascript server env)
-- *Cheerio* (jquery in node)
-- *JQuery Templates* (expression of HTML content)
+- Node.js *(javascript server env)*
+- Cheerio *(jquery in node)*
+- JQuery Templates *(expression of HTML content)*
     
 ###Future support:
-- *Rhino* (javascript via java)
-- *solr* (javascript adapters for search results)
+- Rhino *(javascript via java)*
+- solr *(javascript adapters for search results)*
     
 
     
