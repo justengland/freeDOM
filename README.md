@@ -19,6 +19,44 @@ freeDOM
 ###Future support:
 - Rhino *(javascript via java)*
 - solr *(javascript adapters for search results)*
+
+### Thoughts
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
 
     
