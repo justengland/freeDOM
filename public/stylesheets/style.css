@@ -1,0 +1,44 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+a {
+  color: #00b7ff;
+}
+
+/* ----------------------------- HEADER ----------------------------- */
+header {
+    display: inline-block;
+    width: 100%;
+}
+
+/* ----------------------------- Article ----------------------------- */
+article {
+  float: left;
+  width: 500px;
+  display: inline-block;
+  background: #789292;
+}
+
+
+/* ----------------------------- ASIDE ----------------------------- */
+aside {
+    display: inline-block;
+    width: 300px;
+}
+
+/* ----------------------------- FOOTER ----------------------------- */
+footer {
+    display: inline-block;
+    width: 100%;
+}
+
+/* ----------------------------- Partials ----------------------------- */
+/* -- NAV -- */
+#nav li {
+    list-style:none;
+    float:left;
+    margin: 10px;
+}
+
+
