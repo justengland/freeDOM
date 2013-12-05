@@ -1,4 +1,4 @@
-var module = function (worker) {
+var mod = function (worker) {
     (function (root, factory) {
         if (typeof define === 'function' && define.amd) {
             // AMD. Register as an anonymous module.
@@ -19,7 +19,7 @@ var module = function (worker) {
 };
 
 // Provider simple logging for freeDOM
-define(function () {
+mod(function () {
     var logger = {
         log: function(message) {
             if(console && console.log) {

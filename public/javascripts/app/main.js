@@ -9,6 +9,11 @@ requirejs.config({
         "templateEngine": "/javascripts/freeDOM/freeDOM.template-engine.handlebars",
         "logger": "/javascripts/freeDOM/freeDOM.logger",
         "handlebars": "lib/handlebars"
+    },
+    shim: {
+        'handlebars': {
+            exports: 'Handlebars'
+        }
     }
 });
 
