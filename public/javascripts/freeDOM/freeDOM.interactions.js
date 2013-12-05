@@ -1,6 +1,29 @@
-// Handle the page interactions for freeDOM
+var module = function (worker) {
+    (function (root, factory) {
+        if (typeof define === 'function' && define.amd) {
+            // AMD. Register as an anonymous module.
+            define(["jquery", "handlebars", "templateEngine", "logger"], factory);
+        } else if (typeof exports === 'object') {
+            // Node. Does not work with strict CommonJS, but
+            // only CommonJS-like enviroments that support module.exports,
+            // like Node.
+            module.exports = factory(require('cheerio'), 
+                require('handlebars'), 
+                require('./freeDOM.templateEngine.js'), 
+                require('./freeDOM.logger.js'));
+        } else {
+            // Browser globals (root is window)
+            root.returnExports = factory(root, $, templateEngine, logger);
+        }
+    }(this, function () {
+        // the resulting object that should be cool in both node and the browser.
+        return worker();
+    }));
+};
 
-define(["jquery", "handlebars", "templateEngine", "logger"], function($, handlebars, templateEngine, logger) {
+
+// Handle the page interactions for freeDOM
+define(function($, handlebars, templateEngine, logger) {
     var interactions = {
         init: function() {
             var template;

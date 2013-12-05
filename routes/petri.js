@@ -1,20 +1,19 @@
 
-var fs   = require("fs");
+var fs = require("fs");
 var querystring = require("querystring");
 var https = require('https');
 var http = require('http');
 var cheerio = require('cheerio');
+var CheerioTemplate = require("../public/javascripts/lib/CheerioTemplate.js");
 
 var LibSHML = require('../public/javascripts/lib/shml.js');
 var shml = new LibSHML.SHMLClass();
 
 exports.index = function(req, res){
     console.log("app loaded");
+    //CheerioTemplate.render("<div id='thingy'><div class='foo'>hi</div></div>")
     
-    var $ = cheerio.load("<div id='thingy'><div class='foo'>hi</div></div>");
-    $('#thingy').find('.foo').addClass("bar");
-    
-    res.send($.html());
+    res.send("PETRI CHEERIO", cheerio.load);
 };
 
 //constants for this project
@@ -41,7 +40,7 @@ var processSHMLFromPath = function(path){
     return shml.process(
         fs.readFileSync(path_to_views+path, "utf8")
     )
-}
+};
 
 //exports.index = function(req, res){
 //    console.log("app loaded");
