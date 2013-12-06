@@ -1,0 +1,13 @@
+<% include src='/views/layouts/main' type='layout' %>
+
+<script id="articleBody" type="x/freeDOM" data-category="mainPage" >
+    <div class="mainContent">
+        <h1>Second Page</h1>
+        <h2>{{time}}</h2>
+    </div>
+    <a href="/" data-update='/?json#article' data-template='/views/index.handlebars'>refresh</a>
+</script>
+
+<script id="sidebar" type="x/freeDOM">
+    <h2>I am side bar</h2>
+</script>

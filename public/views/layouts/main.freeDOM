@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>{{title}}</title>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+    @@(include src'/views/partials/nav' type='partial')
+</head>
+<body>
+    <header> 
+        <div id="nav"></div> 
+        <h2>{{time}}</h2>
+    </header>
+    <article data-template="articleBody" />
+    <aside data-template="sidebar" />
+    <footer>Footer</footer>
+    <script data-main="/javascripts/app/main" src="/javascripts/lib/require.js"></script>
+</body>
+</html>
